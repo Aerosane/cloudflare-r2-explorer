@@ -4,7 +4,7 @@
   "description": "A Cloudflare R2 bucket explorer with a smooth and user-friendly interface.",
   "main": "app.js",
   "scripts": {
-    "build": "echo 'Building the project...' && mkdir -p dist && cp -r * dist",
+    "build": "echo 'Building the project...' && mkdir -p dist && cp -r * dist --exclude dist",
     "deploy": "gh-pages -d dist"
   },
   "author": "Your Name",
