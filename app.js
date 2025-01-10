@@ -1,5 +1,5 @@
 async function fetchBucketContents() {
-    const response = await fetch('https://api.cloudflare.com/client/v4/accounts/YOUR_ACCOUNT_ID/r2/buckets/YOUR_BUCKET_NAME/objects', {
+    const response = await fetch('https://4626da2aef7b96cdab6222985b5187b8.r2.cloudflarestorage.com/primary', {
         method: 'GET',
         headers: {
             'Authorization': 'Bearer YOUR_ACCESS_TOKEN',
@@ -24,7 +24,7 @@ async function uploadFile(file) {
     const formData = new FormData();
     formData.append('file', file);
 
-    const response = await fetch('https://api.cloudflare.com/client/v4/accounts/YOUR_ACCOUNT_ID/r2/buckets/YOUR_BUCKET_NAME/objects', {
+    const response = await fetch('https://4626da2aef7b96cdab6222985b5187b8.r2.cloudflarestorage.com/primary', {
         method: 'POST',
         headers: {
             'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
@@ -40,7 +40,7 @@ async function uploadFile(file) {
 }
 
 async function deleteFile(fileName) {
-    const response = await fetch(`https://api.cloudflare.com/client/v4/accounts/YOUR_ACCOUNT_ID/r2/buckets/YOUR_BUCKET_NAME/objects/${fileName}`, {
+    const response = await fetch(`https://4626da2aef7b96cdab6222985b5187b8.r2.cloudflarestorage.com/primary/${fileName}`, {
         method: 'DELETE',
         headers: {
             'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
@@ -55,7 +55,7 @@ async function deleteFile(fileName) {
 }
 
 async function renameFile(oldFileName, newFileName) {
-    const response = await fetch(`https://api.cloudflare.com/client/v4/accounts/YOUR_ACCOUNT_ID/r2/buckets/YOUR_BUCKET_NAME/objects/${oldFileName}`, {
+    const response = await fetch(`https://4626da2aef7b96cdab6222985b5187b8.r2.cloudflarestorage.com/primary/${oldFileName}`, {
         method: 'PUT',
         headers: {
             'Authorization': 'Bearer YOUR_ACCESS_TOKEN',
