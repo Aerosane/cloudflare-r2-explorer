@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install rsync
+        run: sudo apt-get install rsync
+
       - name: Build project
         run: npm run build
 

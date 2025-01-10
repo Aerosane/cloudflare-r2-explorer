@@ -15,21 +15,12 @@ This project is a Cloudflare R2 bucket explorer with a smooth and user-friendly 
    npm install
    ```
 
-3. Create a `credentials.json` file in the root directory with the following structure:
-   ```json
-   {
-     "accessKey": "YOUR_ACCESS_KEY",
-     "secretKey": "YOUR_SECRET_KEY",
-     "bucketName": "YOUR_BUCKET_NAME"
-   }
-   ```
-
-4. Build the project:
+3. Build the project:
    ```sh
    npm run build
    ```
 
-5. Deploy to GitHub Pages:
+4. Deploy to GitHub Pages:
    ```sh
    npm run deploy
    ```
@@ -47,11 +38,6 @@ This project is a Cloudflare R2 bucket explorer with a smooth and user-friendly 
 1. Open the app in your browser.
 2. Use the interface to explore the contents of your Cloudflare R2 bucket.
 3. Upload, delete, and rename files as needed.
-
-## Configuration
-
-- The `credentials.json` file should contain your Cloudflare R2 credentials.
-- Make sure to replace `YOUR_ACCESS_KEY`, `YOUR_SECRET_KEY`, and `YOUR_BUCKET_NAME` with your actual Cloudflare R2 credentials.
 
 ## License
 
